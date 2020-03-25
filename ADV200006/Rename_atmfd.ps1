@@ -46,5 +46,5 @@ else {
 
 sleep(5)
 
-# Read-Host | Out-Null ;
-# Restart-Computer
+Read-Host | Out-Null ;
+Restart-Computer
