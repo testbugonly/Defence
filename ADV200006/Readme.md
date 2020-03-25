@@ -8,6 +8,6 @@ Two remote code execution vulnerabilities exist in Microsoft Windows when the Wi
 
 
 ## Rename `atmfd.dll` with `.ps1` or `.exe`
-Chose one , just double-click , it will be restart.
+Chose one , just double-click . Your computer will restart automatically.
 
 ## Test on Win10 x64
