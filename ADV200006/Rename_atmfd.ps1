@@ -21,7 +21,7 @@ Start-Process powershell -Verb runAs  "cd C:\Windows\syswow64"
 Start-Process powershell -Verb runAs  "takeown.exe /f atmfd.dll'"
 Start-Process powershell -Verb runAs  "icacls.exe atmfd.dll /save atmfd.dll.acl'"
 Start-Process powershell -Verb runAs  "icacls.exe atmfd.dll /grant Administrators:(F)'"
-Start-Process powershell -Verb runAs  "rename atmfd.dll old-atmfd.dll'"
+Start-Process powershell -Verb runAs  "rename-item atmfd.dll old-atmfd.dll'"
 }
 
 if ($type -cmatch 'x86'){
@@ -29,7 +29,7 @@ Start-Process powershell -Verb runAs  "cd $path0"
 Start-Process powershell -Verb runAs  "takeown.exe /f atmfd.dll'"
 Start-Process powershell -Verb runAs  "icacls.exe atmfd.dll /save atmfd.dll.acl'"
 Start-Process powershell -Verb runAs  "icacls.exe atmfd.dll /grant Administrators:(F)'"
-Start-Process powershell -Verb runAs  "rename atmfd.dll old-atmfd.dll'"
+Start-Process powershell -Verb runAs  "rename-item atmfd.dll old-atmfd.dll'"
 }
 
 
